@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="inputDataViewController" customModule="Commonwealth" customModuleProvider="target">
+            <connections>
+                <outlet property="ageField" destination="oNk-Ve-U69" id="dCb-hr-rKQ"/>
+                <outlet property="inputButton" destination="tzG-Xq-Pyj" id="AuD-GN-p18"/>
+                <outlet property="nameField" destination="ru4-uu-avY" id="Izy-tp-Yyw"/>
+                <outlet property="salaryField" destination="q1j-37-Hxo" id="WM6-La-xWY"/>
+                <outlet property="saveButton" destination="Vtw-cP-0QQ" id="dYB-Yf-zlg"/>
+                <outlet property="task1" destination="uKi-My-GvG" id="CVP-Op-Rf8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewEmployee" destination="CiE-da-1ea" id="9G6-9e-mEo"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CiE-da-1ea">
+                    <rect key="frame" x="22" y="145" width="330" height="299"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="bZT-0g-bec">
+                            <rect key="frame" x="27" y="8" width="277" height="283"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tzG-Xq-Pyj">
+                                    <rect key="frame" x="0.0" y="0.0" width="277" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="LU6-xm-fbC"/>
+                                        <constraint firstAttribute="width" constant="277" id="MZl-yk-muJ"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                    <state key="normal" title="Input Data"/>
+                                    <connections>
+                                        <action selector="inputDataTapped:" destination="-1" eventType="touchUpInside" id="MNb-eh-uUJ"/>
+                                    </connections>
+                                </button>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ru4-uu-avY">
+                                    <rect key="frame" x="0.0" y="59" width="277" height="49"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="49" id="hhD-iV-vUF"/>
+                                        <constraint firstAttribute="width" constant="277" id="k52-fH-HzS"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Salary" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q1j-37-Hxo">
+                                    <rect key="frame" x="0.0" y="117" width="277" height="49"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="49" id="8RG-cf-JB8"/>
+                                        <constraint firstAttribute="width" constant="277" id="SFk-UY-VTy"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Age" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oNk-Ve-U69">
+                                    <rect key="frame" x="0.0" y="175" width="277" height="49"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="277" id="WnH-aY-Fc2"/>
+                                        <constraint firstAttribute="height" constant="49" id="pgH-L8-Egr"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vtw-cP-0QQ">
+                                    <rect key="frame" x="0.0" y="233" width="277" height="50"/>
+                                    <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="DzZ-BM-F7x"/>
+                                        <constraint firstAttribute="width" constant="277" id="P5l-Ty-NXE"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="Save Data"/>
+                                    <connections>
+                                        <action selector="saveTapped:" destination="-1" eventType="touchUpInside" id="5L2-XV-g3R"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="bZT-0g-bec" firstAttribute="leading" secondItem="CiE-da-1ea" secondAttribute="leading" constant="27" id="Jku-dU-paq"/>
+                        <constraint firstAttribute="bottom" secondItem="bZT-0g-bec" secondAttribute="bottom" constant="8" id="Y9u-RK-nMX"/>
+                        <constraint firstAttribute="trailing" secondItem="bZT-0g-bec" secondAttribute="trailing" constant="26" id="f5c-Op-MCM"/>
+                        <constraint firstItem="bZT-0g-bec" firstAttribute="top" secondItem="CiE-da-1ea" secondAttribute="top" constant="8" id="x2x-Vz-Jmh"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QB0-UX-Vxb">
+                    <rect key="frame" x="19" y="573" width="337" height="74"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="74" id="kB7-sR-n8P"/>
+                        <constraint firstAttribute="width" constant="337" id="va3-OX-xvX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <state key="normal" title="Show All Employee"/>
+                    <connections>
+                        <action selector="showAmployeeTapped:" destination="-1" eventType="touchUpInside" id="eV8-f2-NAG"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Commonwealth Apps " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6eW-7q-QLF">
+                    <rect key="frame" x="22" y="65" width="330" height="59"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="330" id="2GR-14-jg5"/>
+                        <constraint firstAttribute="height" constant="59" id="8gA-G3-kFt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uKi-My-GvG">
+                    <rect key="frame" x="22" y="472" width="330" height="71"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="330" id="POa-Ep-VtU"/>
+                        <constraint firstAttribute="height" constant="71" id="onY-a8-PuY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <state key="normal" title="Task 1 (Please see the console)"/>
+                    <connections>
+                        <action selector="task1Tapped:" destination="-1" eventType="touchUpInside" id="u8t-N5-HFs"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6eW-7q-QLF" secondAttribute="trailing" constant="23" id="Akt-zz-Wz1"/>
+                <constraint firstItem="QB0-UX-Vxb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="19" id="H00-TL-LaO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="QB0-UX-Vxb" secondAttribute="bottom" constant="20" id="PFo-RL-Oev"/>
+                <constraint firstItem="6eW-7q-QLF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="22" id="Qsx-Jp-Efs"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uKi-My-GvG" secondAttribute="trailing" constant="23" id="RrV-39-szt"/>
+                <constraint firstItem="uKi-My-GvG" firstAttribute="top" secondItem="CiE-da-1ea" secondAttribute="bottom" constant="28" id="WXQ-nM-gkq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="CiE-da-1ea" secondAttribute="trailing" constant="23" id="cmc-W1-i5P"/>
+                <constraint firstItem="CiE-da-1ea" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="22" id="gNr-Qx-ifa"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QB0-UX-Vxb" secondAttribute="trailing" constant="19" id="jKJ-Fm-B4Z"/>
+                <constraint firstItem="uKi-My-GvG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="22" id="sa4-DP-eow"/>
+                <constraint firstItem="6eW-7q-QLF" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="65" id="tl8-9i-OPs"/>
+                <constraint firstItem="CiE-da-1ea" firstAttribute="top" secondItem="6eW-7q-QLF" secondAttribute="bottom" constant="21" id="xoE-MT-2xE"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="138.40000000000001" y="85.907046476761622"/>
+        </view>
+    </objects>
+</document>
